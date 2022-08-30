@@ -2,10 +2,13 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import { useAuth } from "../auth";
 
 //Function and Hook creation for our Navbar
 const Navbar = () => {
   const [isMobile, setIsMobile] = useState(false);
+  const auth = useAuth()
+
   return (
     <nav className="navbar">
       <h4 className="logo">3S Silicon </h4>
@@ -26,8 +29,18 @@ const Navbar = () => {
         <Link to="/diagnostic" className="diagnostic">
           <li>Diagnostic</li>
         </Link>
-      </ul>
 
+        <Link to="/profile" className="profile">
+          <li>Profile</li>
+        </Link>
+      </ul>
+      {
+        !auth.user && (
+          <Link to="/login" className="login">
+            Login
+          </Link>
+        )
+      }
       <button className="mobile-menu-icon"
       onClick={() => setIsMobile(!isMobile)}>
         {isMobile ? (

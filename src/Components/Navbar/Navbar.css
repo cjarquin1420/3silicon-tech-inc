@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: #2c5364;
+  /*background: #2c5364;*/
 }
 
 .navbar {
@@ -21,15 +21,25 @@
 
 .nav-links {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   list-style: none;
   width: 75%;
+}
+
+.color-letter {
+  display: flex;
+  color: black;
+  padding: 10px;
+  font-size: large;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .system,
 .runscreen,
 .module,
-.diagnostic {
+.diagnostic,
+.profile,
+.login {
   text-decoration: none;
   color: white;
   font-size: 15px;
@@ -74,7 +84,9 @@
   .system,
   .runscreen,
   .module,
-  .diagnostic {
+  .diagnostic,
+  .profile,
+  .login {
     color: white;
     text-align: center;
     padding: 32px;

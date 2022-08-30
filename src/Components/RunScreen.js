@@ -2,7 +2,7 @@ import React from 'react'
 
 const RunScreen = () => {
   return (
-    <div>Run Screen</div>
+    <div className="color-letter">Run Screen</div>
   )
 }
 

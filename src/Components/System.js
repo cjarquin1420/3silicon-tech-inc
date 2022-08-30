@@ -2,7 +2,7 @@ import React from 'react'
 
 const System = () => {
   return (
-    <div>System</div>
+    <div className="color-letter">System</div>
   )
 }
 

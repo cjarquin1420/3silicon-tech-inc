@@ -2,7 +2,7 @@ import React from 'react'
 
 const Diagnostic = () => {
   return (
-    <div>Diagnostic</div>
+    <div className="color-letter">Diagnostic</div>
   )
 }
 
